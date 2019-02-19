@@ -2,7 +2,10 @@
 
 ## 0.34.1-dev
 
+### 主な変更点
+
 - [RFC 6716](https://melpon.github.io/rfc/rfc6716.xml) を軽く読んで、パケットやフレームのバイナリ構造や DTX や VAD フラグについて理解を深めました
+- Medium を利用し始めて、[Wata の情報を公開](https://link.medium.com/UOpDBi2OqU) しました
 
 ## ルール
 
