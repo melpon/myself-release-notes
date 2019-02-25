@@ -11,6 +11,7 @@
 
 ### その他
 
+- あるプログラミング教育系のサイトで C と C++ を扱うということで、そのコンサルティングを受けました
 - [RFC 6716](https://melpon.github.io/rfc/rfc6716.xml) を軽く読んで、パケットやフレームのバイナリ構造や DTX や VAD フラグについて理解を深めました
 - [resty-auth-serve](git@github.com:melpon/resty-auth-serve.git) で、認証付きの静的ファイル配信サーバを実装しました。OpenResty を使って Google 認証を掛けた上で S3 のファイルを取得してクライアントに返す、という実装を書き、それを AWS Fargate 上にデプロイする CloudFormation のスクリプトを書きました。
 
