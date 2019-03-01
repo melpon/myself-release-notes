@@ -6,6 +6,7 @@
 
 - Medium を利用し始めて、[Wata の情報を公開](https://link.medium.com/UOpDBi2OqU) しました
 - [RFC 3533](https://melpon.github.io/rfc/rfc3533.xml) と [RFC 7845](https://melpon.github.io/rfc/rfc7845.xml) を読んで、Opus を Ogg コンテナに詰めて Google の Cloud Speech-to-Text に送信する仕組みを Wata に実装しました。
+- 下記の VAD フラグの知識を使って、無声区間をちゃんと検出するようにしました。
 
 ### Wandbox 関連
 
