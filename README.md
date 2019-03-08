@@ -2,6 +2,38 @@
 
 ## 0.34.2-dev
 
+### Wata 関連
+
+- （負荷テストの件について書く）
+
+### Wandbox 関連
+
+- （多分 Boost 1.70.0 あたりが来そう）
+
+### Wandbox スポンサー関連
+
+以下の企業スポンサーを追加/更新しました。
+
+- [株式会社フィックスターズ](http://www.fixstars.com/)
+
+以下の個人スポンサーを追加/更新しました。
+
+- [@char8_t](https://twitter.com/char8_t)
+- [@ignis_fatuus](https://twitter.com/ignis_fatuus)
+- [sublimer](https://twitter.com/lz650sss)
+- 沖　観行
+- [Usagi Ito](https://twitter.com/USAGI_WRP)
+- [@cpp_akira](https://twitter.com/cpp_akira)
+- [@take_cheeze](https://github.com/take-cheeze)
+
+### momo 関連
+
+- M73 対応版で macOS だとセグフォする問題について [調査しました](https://github.com/shiguredo/momo/pull/59#issuecomment-469357182)
+
+### その他
+
+- Yacto にマイグレーションファイルの検証機能を実装して 2.0.0-pre.8 をリリースしました。[CHANGELOG](https://github.com/gumi/yacto/blob/master/CHANGELOG.md#200-pre8)
+
 ## 0.34.1
 
 ### Wata 関連
@@ -13,6 +45,12 @@
 ### Wandbox 関連
 
 - gcc-8.3.0 を追加しました
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました
+
+- [堀尾典孝](https://twitter.com/holyshared)
 
 ### その他
 
