@@ -25,7 +25,7 @@
 - [Usagi Ito](https://twitter.com/USAGI_WRP)
 - [@cpp_akira](https://twitter.com/cpp_akira)
 - [@take_cheeze](https://github.com/take-cheeze)
-- [@tzik_tack](https://github.com/tzik_tack)
+- [@tzik_tack](https://twitter.com/tzik_tack)
 
 ### momo 関連
 
