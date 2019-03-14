@@ -26,10 +26,18 @@
 - [@cpp_akira](https://twitter.com/cpp_akira)
 - [@take_cheeze](https://github.com/take-cheeze)
 - [@tzik_tack](https://twitter.com/tzik_tack)
+- [@wraith13](https://twitter.com/wraith13)
 
 ### momo 関連
 
 - M73 対応版で macOS だとセグフォする問題について [調査しました](https://github.com/shiguredo/momo/pull/59#issuecomment-469357182)
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- あるプログラミング教育系のサイトで C と C++ を扱うということで、そのコンサルティングをやっています
+- gRPC C++ を使って開発する仕事を受けました(詳細は非公開)
 
 ### その他
 
