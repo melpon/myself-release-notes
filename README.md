@@ -27,6 +27,7 @@
 - [@take_cheeze](https://github.com/take-cheeze)
 - [@tzik_tack](https://twitter.com/tzik_tack)
 - [@wraith13](https://twitter.com/wraith13)
+- [@srz_zumix](https://twitter.com/srz_zumix)
 
 ### momo 関連
 
