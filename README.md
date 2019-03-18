@@ -4,7 +4,7 @@
 
 ### Wata 関連
 
-- （負荷テストの件について書く）
+- １万接続で試験して動作しました → [Wataが1万接続で動いた – wandbox.org – Medium](https://medium.com/wandbox-org/wata%E3%81%8C1%E4%B8%87%E6%8E%A5%E7%B6%9A%E3%81%A7%E5%8B%95%E3%81%84%E3%81%9F-7d9eab20a144)
 
 ### Wandbox 関連
 
