@@ -6,9 +6,11 @@
 
 - １万接続で試験して動作しました → [Wataが1万接続で動いた – wandbox.org – Medium](https://medium.com/wandbox-org/wata%E3%81%8C1%E4%B8%87%E6%8E%A5%E7%B6%9A%E3%81%A7%E5%8B%95%E3%81%84%E3%81%9F-7d9eab20a144)
 - Wata プロジェクトの紹介ページを用意しました → [Wata プロジェクト](https://gist.github.com/melpon/8ba5197d71ece3b034abfcd0f7cb10db)
+- １万接続で大変だったのをまとめました → [gRPC を使って1万接続を達成するまでの話 – wandbox.org – Medium](https://medium.com/wandbox-org/grpc-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61%E4%B8%87%E6%8E%A5%E7%B6%9A%E3%82%92%E9%81%94%E6%88%90%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E8%A9%B1-cf5cd310a71d)
 
 ### Wandbox 関連
 
+- [clang-8.0.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-clang-8-0-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-9edf4cb7cec2)
 - （多分 Boost 1.70.0 あたりが来そう）
 
 ### Wandbox スポンサー関連
@@ -45,6 +47,7 @@
 ### その他
 
 - Yacto にマイグレーションファイルの検証機能を実装して 2.0.0-pre.8 をリリースしました。[CHANGELOG](https://github.com/gumi/yacto/blob/master/CHANGELOG.md#200-pre8)
+- Yacto のマイグレーション時に存在しないモデルがあった場合に drop table するマイグレーションファイルを吐き出す機能を追加して 2.0.0-pre.9 をリリースしました。 [CHANGELOG](https://github.com/gumi/yacto/blob/master/CHANGELOG.md#200-pre9)
 
 ## 0.34.1
 
