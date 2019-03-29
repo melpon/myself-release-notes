@@ -19,6 +19,7 @@
 以下の企業スポンサーを追加/更新しました。
 
 - [株式会社フィックスターズ](http://www.fixstars.com/)
+- [株式会社Preferred Networks](https://www.preferred-networks.jp/)
 
 以下の個人スポンサーを追加/更新しました。
 
