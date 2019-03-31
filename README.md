@@ -12,7 +12,7 @@
 
 - [clang-8.0.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-clang-8-0-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-9edf4cb7cec2)
 - クライアントのブラウザ上で任意の JavaScript コードが実行できる脆弱性を修正しました → [melpon/wandbox#262](https://github.com/melpon/wandbox/issues/262)
-- （多分 Boost 1.70.0 あたりが来そう）
+- [php-7.3.3 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-php-7-3-3-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-1b5d9f32c569)
 
 ### Wandbox スポンサー関連
 
