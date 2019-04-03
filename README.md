@@ -1,5 +1,33 @@
 # じぶんリリースノート
 
+## 0.34.3-dev
+
+### Wata 関連
+
+### Wandbox 関連
+
+### Wandbox スポンサー関連
+
+以下の企業スポンサーを追加/更新しました。
+
+
+以下の個人スポンサーを追加/更新しました。
+
+- [Freezer](https://mastodon.social/@Freezer)
+
+### momo 関連
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- あるプログラミング教育系のサイトで C と C++ を扱うということで、そのコンサルティングをやっています
+- gRPC C++ を使って開発する仕事をやっています(詳細は非公開)
+
+### その他
+
+- [FLAC の仕様](https://xiph.org/flac/format.html#format_overview) を読んで、FLAC が任意の位置（バイト単位）から再生しても正しくデコードできるようになっていることを知りました
+
 ## 0.34.2
 
 ### Wata 関連
