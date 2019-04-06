@@ -14,6 +14,7 @@
 以下の個人スポンサーを追加/更新しました。
 
 - [Freezer](https://mastodon.social/@Freezer)
+- [mtera](https://twitter.com/tonakou)
 
 ### momo 関連
 
