@@ -15,6 +15,7 @@
 
 - [Freezer](https://mastodon.social/@Freezer)
 - [mtera](https://twitter.com/tonakou)
+- [@m_akihiro](https://twitter.com/m_akihiro)
 
 ### momo 関連
 
