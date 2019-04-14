@@ -7,6 +7,8 @@
 
 ### Wandbox 関連
 
+- [boost-1.70.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-boost-1-70-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-94f99ca4a6e1)
+
 ### Wandbox スポンサー関連
 
 以下の企業スポンサーを追加/更新しました。
