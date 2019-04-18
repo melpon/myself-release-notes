@@ -4,6 +4,8 @@
 
 ### Wata 関連
 
+- Windows で動きました → [Wata をWindows対応しました](https://medium.com/wandbox-org/wata-%E3%82%92windows%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-59a0259f436f)
+- gRPC 1.20.0 にアップデートしました
 
 ### Wandbox 関連
 
