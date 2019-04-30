@@ -6,23 +6,27 @@
 
 - Windows で動きました → [Wata をWindows対応しました](https://medium.com/wandbox-org/wata-%E3%82%92windows%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-59a0259f436f)
 - gRPC 1.20.0 にアップデートしました
+- Wata をバーチャルライバー特化型の配信とするように方針を決めました
+- Wata で RTMP のデータをブラウザに配信して表示するのを実装しました → https://twitter.com/melponn/status/1123135647840067584
 
 ### Wandbox 関連
 
 - [boost-1.70.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-boost-1-70-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-94f99ca4a6e1)
+- Wandbox で日本語で書いた文字列が permlink 経由で表示した時に文字化けしていたバグを修正しました。
 
 ### Wandbox スポンサー関連
-
-以下の企業スポンサーを追加/更新しました。
-
 
 以下の個人スポンサーを追加/更新しました。
 
 - [Freezer](https://mastodon.social/@Freezer)
 - [mtera](https://twitter.com/tonakou)
 - [@m_akihiro](https://twitter.com/m_akihiro)
+- 松崎啓治
 
 ### momo 関連
+
+- Boost 1.70 へのアップデートをしました
+- ubuntu-18.04_armv8 のビルドを追加しました
 
 ### 仕事状況
 
@@ -35,6 +39,8 @@
 
 - [FLAC の仕様](https://xiph.org/flac/format.html#format_overview) を読んで、FLAC が任意の位置（バイト単位）から再生しても正しくデコードできるようになっていることを知りました
 - 借りてた自作キーボードにゲームを入れて遊んでました → [自作キーボードにゲームを作って入れた話](https://medium.com/@melpon/%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AB%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E5%85%A5%E3%82%8C%E3%81%9F%E8%A9%B1-a4840a83518e)
+- [動画を送ろう!!RTMP](https://www.kumaryu.net/books/douga-rtmp.html) を読んで RTMP を一から作ったので、RTMP にとても詳しくなりました
+- [Coinhive事件裁判費用の寄付のお願い](https://www.hacker.or.jp/coinhive_innocent/) に合同会社 Wandbox として 5 万円寄付しました
 
 ## 0.34.2
 
