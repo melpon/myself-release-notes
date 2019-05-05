@@ -1,5 +1,30 @@
 # じぶんリリースノート
 
+## 0.34.4-dev
+
+### Wata 関連
+
+### Wandbox 関連
+
+- [gcc-9.1.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-gcc-9-1-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-aea46f4cba01)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました。
+
+- [I (@wx257osn2)](https://twitter.com/wx257osn2)
+
+### momo 関連
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- あるプログラミング教育系のサイトで C と C++ を扱うということで、そのコンサルティングをやっています
+- gRPC C++ を使って開発する仕事をやっています(詳細は非公開)
+
+### その他
+
 ## 0.34.3
 
 ### Wata 関連
