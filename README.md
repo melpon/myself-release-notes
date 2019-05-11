@@ -13,6 +13,7 @@
 以下の個人スポンサーを追加/更新しました。
 
 - [I (@wx257osn2)](https://twitter.com/wx257osn2)
+- [@jj1bdx](https://twitter.com/jj1bdx)
 
 ### momo 関連
 
