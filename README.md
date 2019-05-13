@@ -14,6 +14,7 @@
 
 - [I (@wx257osn2)](https://twitter.com/wx257osn2)
 - [@jj1bdx](https://twitter.com/jj1bdx)
+- [@yuushimizup](https://twitter.com/yuushimizup)
 
 ### momo 関連
 
