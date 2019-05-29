@@ -7,6 +7,7 @@
 ### Wandbox 関連
 
 - [gcc-9.1.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-gcc-9-1-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-aea46f4cba01)
+- [perl-5.28.2 と perl-5.30.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-perl-5-28-2-%E3%81%A8-5-30-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-50064e87a87a)
 
 ### Wandbox スポンサー関連
 
