@@ -4,6 +4,8 @@
 
 ### Wata 関連
 
+- RTMP to ブラウザーを実装して[記事にしました](https://medium.com/wandbox-org/wata-%E3%82%92%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E6%98%A0%E5%83%8F%E9%85%8D%E4%BF%A1%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F-569300f47b8e)
+
 ### Wandbox 関連
 
 - [gcc-9.1.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-gcc-9-1-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-aea46f4cba01)
@@ -22,16 +24,12 @@
 - [@yuushimizup](https://twitter.com/yuushimizup)
 - 安藤敏彦
 
-### momo 関連
-
 ### 仕事状況
 
 - [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
 - OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
 - あるプログラミング教育系のサイトで C と C++ を扱うということで、そのコンサルティングをやっています
 - gRPC C++ を使って開発する仕事をやっています(詳細は非公開)
-
-### その他
 
 ## 0.34.3
 
