@@ -16,6 +16,8 @@
 以下の企業スポンサーを追加/更新しました。
 
 - [セオライド・テクノロジー㈱](http://theolizer.com/)
+- [株式会社gumi](https://gu3.co.jp/)
+- [BASSDRUM株式会社](https://bassdrum.org/)
 
 以下の個人スポンサーを追加/更新しました。
 
