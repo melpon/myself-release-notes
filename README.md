@@ -6,6 +6,8 @@
 
 ### Wandbox 関連
 
+- [Wandbox に Node.js 10.16.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-node-js-10-16-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-76f571377453)
+
 ### Wandbox スポンサー関連
 
 以下の企業スポンサーを追加/更新しました。
@@ -15,6 +17,10 @@
 ### momo 関連
 
 ### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- gRPC C++ を使って開発する仕事をやっています(詳細は非公開)
 
 ### その他
 
