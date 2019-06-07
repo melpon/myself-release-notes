@@ -7,12 +7,15 @@
 ### Wandbox 関連
 
 - [Wandbox に Node.js 10.16.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-node-js-10-16-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%9F-76f571377453)
+- [Wandbox に新しく TypeScript を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB%E6%96%B0%E3%81%97%E3%81%84%E8%A8%80%E8%AA%9E-typescript-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-3c24fd7fec5a)
 
 ### Wandbox スポンサー関連
 
 以下の企業スポンサーを追加/更新しました。
 
 以下の個人スポンサーを追加/更新しました。
+
+- [黒澤　亮二](https://twitter.com/rjkuro)
 
 ### momo 関連
 
