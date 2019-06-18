@@ -18,6 +18,8 @@
 以下の個人スポンサーを追加/更新しました。
 
 - [黒澤　亮二](https://twitter.com/rjkuro)
+- [@fukasawah](https://twitter.com/fukasawah)
+- [暢気](https://twitter.com/f_akinobu)
 
 ### momo 関連
 
