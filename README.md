@@ -1,8 +1,11 @@
 # じぶんリリースノート
 
-## 0.34.5-dev
+## 0.34.5
 
 ### Wata 関連
+
+- C# 側とのインターフェース部分を書き換え
+- バグ修正
 
 ### Wandbox 関連
 
@@ -10,10 +13,9 @@
 - [Wandbox に新しく TypeScript を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB%E6%96%B0%E3%81%97%E3%81%84%E8%A8%80%E8%AA%9E-typescript-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-3c24fd7fec5a)
 - [Wandbox に Swift 5.0.1 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-swift-5-0-1-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-f5b4fe17e2d0)
 - [Wandbox に Nim 0.20.0 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-nim-0-20-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-5395b23866cc)
+- [Wandbox に Go 1.12.6 と 1.11.11 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-go-1-12-6-%E3%81%A8-1-11-11-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-e12885bf2a1)
 
 ### Wandbox スポンサー関連
-
-以下の企業スポンサーを追加/更新しました。
 
 以下の個人スポンサーを追加/更新しました。
 
@@ -23,11 +25,19 @@
 
 ### momo 関連
 
+- Windows の Docker で momo.exe をビルドする機能を[実装しました](https://twitter.com/voluntas/status/1144944949445550081)
+- [ubuntu-18.04_x86_64 のベースが Ubuntu 16.04 になってたのを修正](https://github.com/shiguredo/momo/commit/9570fe9d0a16ed10e899a167eb68ee6653fefa0f)
+- [--video-codec や --audio-codec などを sora 専用オプションに移動](https://github.com/shiguredo/momo/commit/92d7f07215b277b02e3038fd7e273bcb1df8593a)
+- [CLI 1.8.0 にバージョンを上げた](https://github.com/shiguredo/momo/commit/cc33d7b262cfbf69db9e4da7fb599c0f48cbe0f3)
+- [NOTTY オプションを追加](https://github.com/shiguredo/momo/commit/08f15330010b78d43e6ef1f2cbf41c65a92b36d1)
+- [ubuntu-16.04_armv8 のビルドを削除](https://github.com/shiguredo/momo/commit/93095c4ab2ca4530fbd9d8fe74e9d586f3993c58)
+
 ### 仕事状況
 
 - [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
 - OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
-- gRPC C++ を使って開発する仕事をやっています(詳細は非公開)
+- gRPC C++ を使って開発した仕事のメンテナンスをしています(詳細は非公開)
+- Opus を扱う Unity プラグインを実装する仕事をしています(詳細は非公開)
 
 ### その他
 
