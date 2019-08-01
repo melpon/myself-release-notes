@@ -1,5 +1,46 @@
 # じぶんリリースノート
 
+## 0.34.6
+
+### Wata 関連
+
+- Wata の公式 Web サイトを[株式会社Xemono](https://xemono.life/)に作ってもらいました。公開は実装が完了してからになります。
+
+### Wandbox 関連
+
+- [Wandbox に Go 1.12.7 と 1.11.12 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-12-7-%E3%81%A8-1-11-12-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-c4bc50801e9e)
+- [Wandbox に Nim 0.20.2 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nim-0-20-2-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-20f60aa62b0c)
+- Wandbox の UI を TypeScript+React+Hooks+MaterialUI で[作り直しています](https://github.com/melpon/wandbox/tree/canine/canine)。
+
+### Wandbox スポンサー関連
+
+- 無し
+
+### momo 関連
+
+- Momo の [Windows 版](https://gist.github.com/voluntas/7af1596557121796123ac7dee9e3f5a4) のビルド周りを改善した
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- gRPC C++ を使って開発した仕事のメンテナンスをしています(詳細は非公開)
+- Opus を扱う Unity プラグインを実装する仕事が完了しました（詳細は非公開）
+
+### その他
+
+- Yacto ライブラリの [TODO](https://github.com/gumi/yacto/issues/15) を書きました
+- Yacto ライブラリを [MyXQL アダプターに対応](https://github.com/gumi/yacto/commit/88f4d8debdef21587600dcb0f3fbab05e778ad14) して [2.0.0-pre.13](https://github.com/gumi/yacto/releases/tag/2.0.0-pre.13) をリリースしました。
+- [ecto_sql](https://github.com/elixir-ecto/ecto_sql/issues/129) の MyXQL アダプターが MySQL 5.6 で `:map` 型が使えないことを報告しました（仕様とのこと）。
+- Credo ライブラリの実行で警告が出ていたので [修正PR](https://github.com/rrrene/credo/pull/677) を投げ、無事マージされました。
+- simple_schema ライブラリの [1.1.9](https://github.com/gumi/simple_schema/releases/tag/1.1.9) をリリースしました。
+
+### 感想
+
+- Wata 関連の実装があまり進んでないのは反省したい。今月は何か進捗出したいところ。
+- 仕事の関係もあって Elixir 周りで調べたり PR してることが多かったなーという感じ。
+- Wandbox の UI は先月中には作っておきたかったけど、思ったより大変だったのでまだ完了してない。今月にはリプレースさせたい。
+
 ## 0.34.5
 
 ### Wata 関連
