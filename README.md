@@ -1,5 +1,56 @@
 # じぶんリリースノート
 
+## 0.34.7
+
+### Wata 関連
+
+- ネイティブプラグインとのやり取りに、以前は組み込み型や配列ぐらいしか渡せなかったのを、C# 用の proto ファイルから生成したメッセージを使うようにして汎用的にしました。
+- ネイティブプラグインのログを Unity 側で扱えるようにしました。
+
+### Wandbox 関連
+
+- Wandbox の新しい UI をプレビューで公開しました → https://canine.wandbox.org/
+- Wandbox の UI を TypeScript+React+Hooks+MaterialUI で[作り直しています](https://github.com/melpon/wandbox/tree/canine/canine)。
+- gcc-9.2.0 を [追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-gcc-9-2-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-8ccb795b16d0)
+- Go 1.12.8 と 1.11.13 を [追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-12-8-%E3%81%A8-1-11-13-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-d2983e877f56)
+- Go 1.12.9 を [追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-12-9-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-bfbd0e90dbb1)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- [@gnaggnoyil](https://twitter.com/gnaggnoyil)
+- [@mandel59](https://twitter.com/mandel59)
+- Tommy6
+
+### momo 関連
+
+- 細かいところを [いろいろ](https://github.com/shiguredo/momo/commits?author=melpon&since=2019-07-31&until=2019-08-31) やりました
+  - `--video-device` オプションの追加
+  - `./momo p2p` を `./momo test` に
+  - nlohmann/json のバージョン更新
+  - `--metadata` オプションの公開（以前は隠しオプションだった）
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- gRPC C++ を使って開発した仕事のメンテナンスをしています(詳細は非公開)
+
+### その他
+
+- Wandbox がディスクフルで止まっていたので直しました。
+  - 実行ログが大分多かったので S3 にアップロードして削除しました。
+- そのついでに実行ログから１日に何回 Wandbox が実行されてるかを [確認しました](https://twitter.com/melponn/status/1165162847975854080)
+- [Kubernetes完全ガイド impress top gearシリーズ](https://www.amazon.co.jp/dp/B07HFS7TDT/) を読みました。
+
+### 感想
+
+- Wata と Wandbox の UI、どちらもそこそこ進められたので良かった。
+- Wandbox の UI はリプレースまで行かなかったので反省する。
+- これ書いてて気が付いたけど Boost 1.71.0 をビルドしたまま放置してたのでちゃんと追加する。
+- ブログ書いてなさ過ぎなので反省する。
+
 ## 0.34.6
 
 ### Wata 関連
