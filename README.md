@@ -1,5 +1,64 @@
 # じぶんリリースノート
 
+## 0.34.8
+
+### Wata 関連
+
+特に無し
+
+### Wandbox 関連
+
+- autoconf から CMake でのビルドに切り替えました: https://github.com/melpon/wandbox/pull/282
+- [Wandbox に Go 1.13 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-13-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-a030c702d756)
+- [Wandbox に Boost 1.71.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-boost-1-71-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-13fed38c0149)
+- [Wandbox の PHP に mbstring 対応を入れました](https://medium.com/wandbox-org/wandbox-%E3%81%AE-php-%E3%81%AB-mbstring-%E5%AF%BE%E5%BF%9C%E3%82%92%E5%85%A5%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F-8c0f1722939a)
+- [Wandbox に clang-9.0.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-clang-9-0-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-7f7f05dbf1df)
+- [Wandbox に Nim 1.0.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nim-1-0-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-5d0f58d21e7e)
+- [Wandbox に Go 1.13.1 と Go 1.12.10 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-13-1-%E3%81%A8-go-1-12-10-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-80db2714d806)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- [イズカワタカノブ](https://twitter.com/soundkitchen)
+
+### momo 関連
+
+- Jetson Nano 用のクロスビルドに対応しました: https://github.com/shiguredo/momo/pull/99
+- オーディオフラグの無効化オプションを追加しました: https://github.com/shiguredo/momo/pull/97
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています（11月末で契約終了）
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- gRPC C++ を使って開発した仕事のメンテナンスをしています(詳細は非公開)
+
+### ブログ
+
+以下の記事を書きました。
+
+- [gRPC C++ の環境を構築する](https://medium.com/@melpon/grpc-c-%E3%81%AE%E7%92%B0%E5%A2%83%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B-4f5f40fb10ec)
+- [React Hooks でいい感じに fetch する](https://medium.com/@melpon/react-hooks-%E3%81%A7%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB-fetch-%E3%81%99%E3%82%8B-8a1101c776de)
+- [Wandbox のビルドを CMake に移行した話](https://medium.com/wandbox-org/wandbox-%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92-cmake-%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%97%E3%81%9F%E8%A9%B1-693956073d45)
+
+### その他
+
+- WebRTC のシグナリングサーバである [Ayame](https://github.com/OpenAyame/ayame) を C++ で再実装してみました: https://github.com/melpon/ayame_cpp
+  - まだとりあえず動く程度しか実装してない
+- 自分用のテンプレート置き場用のリポジトリ [mytemplates](https://github.com/melpon/mytemplates) を作りました
+  - mytemplates に C++ + WebSocket のサーバを扱う場合のテンプレートを追加しました
+  - mytemplates に TypeScript + React Hooks + Material UI を使う場合のテンプレートを追加しました
+- gRPC の実験をいろいろやるリポジトリ [grpc_sandbox](https://github.com/melpon/grpc_sandbox) を作りました
+- FLAC 1.3.3 が CMake 対応したと書いていたのに、パッケージに CMakeLists.txt が無かった問題を報告しました: https://github.com/xiph/flac/issues/140
+- Boost.System が 1.69.0 からヘッダーオンリーになってるので、boostjp の [ヘッダオンリー or ビルドが必要なライブラリ](https://boostjp.github.io/tips/build_link.html) を修正しました: https://github.com/boostjp/site/commit/c0ea2bd7b86172847b510245f807729f0cf2a8cd
+
+### 感想
+
+- 今回はすごくいろいろやったので大変良かった
+- けど相変わらず Wandbox の UI はリプレースできなかったので反省する
+- しかし今月からは仕事が忙しくなる予定なので、外に見える進捗はあまり出なさそう
+- 少なくとも Wata は gumi の契約終了までは諦めて、そっから考える
+
 ## 0.34.7
 
 ### Wata 関連
