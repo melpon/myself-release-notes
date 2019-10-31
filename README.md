@@ -5,7 +5,7 @@
 ### Wandbox 関連
 
 - [Wandbox に CPython 3.8.0 他と PyPy 7.2.0–3 他を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-cpython-3-8-0-%E4%BB%96%E3%81%A8-pypy-7-2-0-3-%E4%BB%96%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-826bd973aba0)
-- [https://medium.com/wandbox-org/wandbox-%E3%81%AB-ruby-2-8-0-preview1-%E4%BB%96%E3%81%A8-mruby-2-0-1-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-a8de991e5d99](Wandbox に Ruby 2.8.0-preview1 他と mruby 2.0.1 を追加しました)
+- [Wandbox に Ruby 2.8.0-preview1 他と mruby 2.0.1 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-ruby-2-8-0-preview1-%E4%BB%96%E3%81%A8-mruby-2-0-1-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-a8de991e5d99)
 
 ### Wandbox スポンサー関連
 
