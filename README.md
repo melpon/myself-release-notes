@@ -1,5 +1,50 @@
 # じぶんリリースノート
 
+## 0.34.9
+
+### Wandbox 関連
+
+- [Wandbox に CPython 3.8.0 他と PyPy 7.2.0–3 他を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-cpython-3-8-0-%E4%BB%96%E3%81%A8-pypy-7-2-0-3-%E4%BB%96%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-826bd973aba0)
+- [https://medium.com/wandbox-org/wandbox-%E3%81%AB-ruby-2-8-0-preview1-%E4%BB%96%E3%81%A8-mruby-2-0-1-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-a8de991e5d99](Wandbox に Ruby 2.8.0-preview1 他と mruby 2.0.1 を追加しました)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- [@tyottyoworks](https://twitter.com/tyottyoworks)
+- [まろ](https://twitter.com/_marony)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [Yacto](https://github.com/gumi/yacto) を大改修して、いくつか破壊的変更を入れつつ 2.0.0-pre.15 をリリースしました。
+- WebRTC SFU Sora の Unity プラグインである [Sora Unity SDK](https://github.com/shiguredo/sora-unity-sdk) の実装をしました。
+  - [Sora Unity SDK サンプル集](https://github.com/shiguredo/sora-unity-sdk-samples) も実装しました。
+- Sora Unity SDK を作る過程で [Windows 向け WebRTC ライブラリ用ビルドツール](https://github.com/shiguredo/shiguredo-webrtc-windows) の整備を行いました。
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやっています（11月末で契約終了）
+- OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) のアップデートや機能追加する仕事をやっています
+- OSS である [Sora Unity SDK](https://github.com/shiguredo/sora-unity-sdk) を開発したりメンテナンスする仕事をやっています
+- gRPC C++ や gRPC Go を使った開発をやっています(詳細は非公開)
+
+### ブログ
+
+書いてない
+
+### その他
+
+- Sora Unity SDK を使ってマルチストリームする動画を頑張って作った: https://twitter.com/melponn/status/1185869961811513346
+- Wandbox の実行環境が HDD フルになってたので、何とか対応した
+
+### 感想
+
+- 10月は忙しいので外に見える成果はあまり無さそうだと思ってたけど、Sora Unity SDK を OSS で開発する仕事を時雨堂から貰えたので結構成果が出た
+- Yacto の改修も割と頑張ってた
+- 11月も10月と同じような感じになる予定
+
 ## 0.34.8
 
 ### Wata 関連
