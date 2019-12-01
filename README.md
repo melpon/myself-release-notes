@@ -1,5 +1,51 @@
 # じぶんリリースノート
 
+## 0.34.10 (2019/11)
+
+### Wandbox 関連
+
+- [Wandbox に Go 1.13.4 や Go 1.12.13 等を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-13-4-%E3%82%84-go-1-12-13-%E7%AD%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-4042434ee9fa)
+- [Wandbox に Nim 1.0.2 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nim-1-0-2-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-364a6d16734e)
+- [Wandbox に Nim 1.0.4 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nim-1-0-4-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-fd724796efbb)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- takezoh
+- \_\_\_shanon
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- 先月から続いて WebRTC SFU Sora の Unity プラグインである [Sora Unity SDK](https://github.com/shiguredo/sora-unity-sdk) の機能を実装していき、[1.0.0](https://github.com/shiguredo/sora-unity-sdk/releases/tag/v1.0.0) をリリースしました（リリース作業自体はやっていない）。
+- Sora Unity SDK 1.0.0 の機能を試せるように [Sora Unity SDK サンプル集](https://github.com/shiguredo/sora-unity-sdk-samples) の改修をしました。
+- [shiguredo-webrtc-windows](https://github.com/shiguredo/shiguredo-webrtc-windows) を GitHub Actions に対応しました。push 毎とデイリービルドが走ってバイナリを作っています。
+
+### 仕事状況
+
+- [株式会社gumi](https://gu3.co.jp/) で開発支援をやりました（契約終了）
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を受けています
+- [時雨堂](https://shiguredo.jp/) から OSS である [Sora Unity SDK](https://github.com/shiguredo/sora-unity-sdk) を開発したりメンテナンスする仕事を受けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を受けています(詳細は非公開)
+
+### ブログ
+
+書いてない
+
+### その他
+
+- Sora Unity SDK を使って Unity カメラのキャプチャする動画を頑張って作った: https://twitter.com/melponn/status/1193411591183552512
+- なぜか [今 GitHub Actions というハンマーを手に入れたので、あらゆるリポジトリが釘に見えてる](https://twitter.com/melponn/status/1195297672833298432) という発言が結構 Fav/RT されてて謎だった
+- Wandbox の実行環境が HDD フルになってたので、何とか対応した
+
+### 感想
+
+- 予定通り10月(0.34.9)と同じような感じになった。
+- 時雨堂から Sora Unity SDK を OSS で開発する仕事をやりまくったのでそこそこ成果が出た
+- gumi は契約終了したので、12月(0.34.11)からはフルリモートになる
+
 ## 0.34.9
 
 ### Wandbox 関連
