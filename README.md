@@ -1,5 +1,66 @@
 # じぶんリリースノート
 
+## 0.34.11 (2019/12)
+
+### Wandbox 関連
+
+- [Wandbox に Boost 1.72.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-boost-1-72-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-6d0704667147)
+- [Wandbox に Go 1.13.5 と Go 1.12.14 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-13-5-%E3%81%A8-go-1-12-14-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-ca8cd16924c9)
+
+### Wandbox スポンサー関連
+
+以下の法人スポンサーを追加/更新しました:
+
+- [株式会社アカツキ](https://aktsk.jp/)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- WebRTC のビルドを各所でやりまくるのが大変になってきたので、ビルド済み WebRTC バイナリを提供するための [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build) を作りました。
+  - それに伴って [shiguredo/momo](https://github.com/shiguredo/momo) や [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk) をこのビルド済み WebRTC を使ってビルドするように変更しました。
+- [shiguredo/momo](https://github.com/shiguredo/momo) をいろいろ修正しました。
+  - WebRTC は [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build) を使ってビルドするように変更しました。
+  - Sora モードで接続する際に OS やクライアントのバージョンなどの様々な情報を付けて接続しに行くようにしました。
+  - --resolution オプションの指定で 1024x768 のような書き方をできるようにしました。
+  - --disable-residual-echo-detector オプションを追加しました。
+  - 詳細は [コミットログ](https://github.com/shiguredo/momo/commits?author=melpon&since=2019-11-30&until=2019-12-31) を参照。
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk) をいろいろ修正しました。
+  - WebRTC は [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build) を使ってビルドするように変更しました。
+  - Sora に接続する際に Unity や SDK のバージョンなどの様々な情報を付けて接続しに行くようにしました。
+  - 詳細は [コミットログ](https://github.com/shiguredo/sora-unity-sdk/commits?author=melpon&since=2019-11-30&until=2019-12-31) を参照。
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples) を新しい Sora Unity SDK に追従しました。
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から OSS である [Sora Unity SDK](https://github.com/shiguredo/sora-unity-sdk) を開発したりメンテナンスする仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。12月(0.34.11)は CSS を書いてました。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+書いてない
+
+### その他
+
+- フルリモートになったので [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを始めてみた。
+  - 作った料理は [Twitter に上げています](https://twitter.com/melponn/media)。
+  - いろいろ食べられるのと、いろいろ作るので料理に関する知識が得られて結構良い感じ。
+- [リングフィットアドベンチャー](https://www.nintendo.co.jp/ring/) が届いたので少しずつやっています。
+  - 負荷は 17 で今はレベル 40 弱ぐらいだったはず。
+- 睡眠が不安定なので、とりあえず fitbit の [charge 2](https://www.fitbit.com/jp/charge2) を買って時間を取ってみた。
+  - 1日の睡眠時間が4時間だったり9時間だったり、3時間+2時間だったり、なかなか酷い感じ。就寝時間も夜中だったりお昼だったりとバラバラ。
+  - ただレム睡眠とか深い睡眠とかの割合的にはそんなにダメでは無いっぽい。猫に邪魔されて質が酷いことになってたりしないかと思ってたけど大丈夫そう。
+
+### 感想
+
+- 完全フルリモートが始まったけど、なんか普通に仕事してるのとあまり違わない感じ
+  - フルリモート＝成果さえ出せば好きな時間に仕事していい、という訳ではなく、結局チームメンバーと同期をとる必要があるので、口で話すかチャットで話すかぐらいの違いだと思う。
+  - あと通勤しなくていいから楽、ぐらい。
+- OSS 周りも含めてかなり時雨堂一色な月だった
+  - 1月(0.34.12)は Wandbox 側にリソースを振っていきたいところ
+
 ## 0.34.10 (2019/11)
 
 ### Wandbox 関連
