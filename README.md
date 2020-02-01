@@ -1,5 +1,68 @@
 # じぶんリリースノート
 
+## 0.34.12 (2019/1)
+
+### Wandbox 関連
+
+- [Wandbox に Go 1.13.6 と Go 1.12.15 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-go-1-13-6-%E3%81%A8-go-1-12-15-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-dfa3a19ea79b)
+- [Wandbox に Nim 1.0.6 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nim-1-0-6-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-351cf3173967)
+
+### Wandbox スポンサー関連
+
+以下の法人スポンサーを追加/更新しました:
+
+- [株式会社ドットインストール](https://dotinstall.com/)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- gRPC C++ でグレースフルシャットダウンが安全に出来るライブラリ [melpon/ggrpc](https://github.com/melpon/ggrpc) を作りました。
+- [melpon/wandbox-builder](https://github.com/melpon/wandbox-builder) に GitHub Actions を導入して、HEAD ビルドの一部を行うようにしました。
+  - これによって、週に１回になってた HEAD ビルドがデイリーでビルド出来るようになりました。
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - ビルドを CMake 化して Windows 対応するのを [始めました](https://github.com/shiguredo/momo/tree/feature/cmake)。
+  - タグを push したら GitHub Actions によるパッケージングとリリースが自動的に行われるようにしました。
+  - --no-video で起動時に一瞬カメラデバイスを掴んでしまうのを修正しました。
+  - jaist が落ちてる時のフォールバック先として tsukuba.wide を追加しました。
+  - 詳細は [コミットログ](https://github.com/shiguredo/momo/commits?author=melpon&since=2019-12-31&until=2020-01-31) を参照。
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - WebRTC のバージョンを上げて [m80.3987.2.1](https://github.com/shiguredo-webrtc-build/webrtc-build/releases/tag/m80.3987.2.1) をリリースしました
+  - GitHub Actions を使って毎日 [HEAD ビルド](https://github.com/shiguredo-webrtc-build/webrtc-build/releases/tag/heads) を行うようにしました
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk) の WebRTC と Boost のバージョンを上げて [v1.0.3](https://github.com/shiguredo/sora-unity-sdk/releases/tag/v1.0.3) をリリースしました。
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples) を新しい Sora Unity SDK に追従しました。
+- [gumi/connex](https://github.com/gumi/connex) と [gumi/simple_schema](https://github.com/gumi/simple_schema) の deps を更新して新しいバージョンをリリースしました。
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。1月(0.34.12) は WASM とブラウザ仕様を相手に戦ってました。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+- [GitHub Actions でデイリービルドしてリリースする](https://medium.com/@melpon/github-actions-%E3%81%A7%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%A6%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%99%E3%82%8B-5211e7dc4b86)
+
+### その他
+
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを継続してやっています。
+  - 作った料理は [Twitter に上げています](https://twitter.com/melponn/media)。
+- [リングフィットアドベンチャー](https://www.nintendo.co.jp/ring/) も継続してちょこちょこやってます。
+- [MSVC の謎の挙動](https://twitter.com/melponn/status/1222822322689597440) に苦しめられました（結局引数で # を渡すのは諦めた）。
+- ちょっとだけ [WASM と戯れました](https://twitter.com/voluntas/status/1220184386655490048)
+- [アジャイル開発で失敗した話が出ると「それはアジャイルじゃなかったね」って多方向から言われてアジャイルが問題ないことにされるの、無敵戦法すぎて面白い](https://twitter.com/melponn/status/1217631481528373248) という発言が結構 RT/Fav されました。
+  - これに対して大量の [引用リプ](https://twitter.com/search?q=https%3A%2F%2Ftwitter.com%2Fmelponn%2Fstatus%2F1217631481528373248&src=typed_query&f=live) を貰いました。うんそうだね、アジャイルだね。
+
+### 感想
+
+- Wandbox の HEAD ビルドを少しだけ近代化できて良かった
+- 睡眠は生活に慣れてちょっとマシになってきた気がする
+  - けどやっぱり１日２回とか寝ることがあり、なかなか安定が難しい
+- 時雨堂からまた新しい仕事を貰ったので、順調に時雨堂に囲い込まれてる
+  - 囲い込まれるというか、むしろ囲いに自分から飛び込んでいく感じ。
+  - コード書いてるだけでお金が貰えるし、やれることの範囲も徐々に広がってる感じがあるし、家に引きこもったままでいられるし、メリット多すぎて囲いの外に出たくない。
+  - 囲い込みってこうやるんだなって勉強になる（使うことは無さそう）。
+
 ## 0.34.11 (2019/12)
 
 ### Wandbox 関連
