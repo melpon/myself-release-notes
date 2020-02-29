@@ -1,5 +1,77 @@
 # じぶんリリースノート
 
+## 0.35.1 (2019/2)
+
+### Wandbox 関連
+
+- Wandbox の SSL 証明書を更新して[さくらの SSL から Let's Encrypt に乗り換えました](https://twitter.com/melponn/status/1233249685021679616)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- わたやん
+- [@KorekaraSEDB](https://twitter.com/KorekaraSEDB)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - Windows で 4K パッチを適用するようにしました
+  - WebRTC のバージョンを更新して何度かリリースしました（現時点で 81.4044.7.0 が最新）
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - Windows 版では H.264 エンコードに NVIDIA VIDEO CODEC SDK を使うようにしました
+  - macOS 版では H.264 エンコード/デコードに VideoToolbox を使うようにしました
+  - role の指定に sendonly, recvonly, sendrecv を使えるようにしました
+  - pong 時に Sora に stats 情報を送るようにしました
+  - 上記の変更を入れて 2020.1 をリリースしました
+  - 詳細は [コミットログ](https://github.com/shiguredo/sora-unity-sdk/commits?author=melpon&since=2020-01-31&until=2020-02-29) を参照
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - multi_pub のサンプルを追加しました
+  - [Video Codecを選択可能にする](https://github.com/shiguredo/sora-unity-sdk-samples/pull/2) をマージしました
+  - サンプルは Sora Unity SDK 2020.1 を使うようにしました
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - ビルドを CMake 化して Windows 対応するのを [やりました](https://github.com/shiguredo/momo/pull/132)
+  - デイリービルドの GitHub Actions を matrix を使って短くしました
+  - macOS で --use-sdl オプションを利用すると落ちていたのを修正しました
+  - WebRTC をカスタムしつつローカルに構築するためのドキュメントを追加
+  - [Sora に stats の取得を実装](https://github.com/shiguredo/momo/pull/134) しました
+  - 詳細は [コミットログ](https://github.com/shiguredo/momo/commits?author=melpon&since=2020-01-31&until=2020-02-29) を参照
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から Momo の Windows 対応、Momo と Sora Unity SDK の NVIDIA VIDEO CODEC SDK 対応などの仕事を請けています
+  - [スロースネットワークス株式会社](http://www.sloth-networks.co.jp/) からの優先実装依頼です
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+なし
+
+### その他
+
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを継続してやっています。
+  - 作った料理は [Twitter に上げています](https://twitter.com/melponn/media)。
+- [リングフィットアドベンチャー](https://www.nintendo.co.jp/ring/) も継続してちょこちょこやってます。
+- （1月のリリース忘れ）1月に [mini Regulus AR5](https://www.dospara.co.jp/5shopping/detail_prime.php?mc=8843&sn=0) を購入してました。
+  - Ryzen5 3400G (3.7GHz-4.2GHz/4コア/8スレッド)、16GB メモリ、SSD 512GB+1TB
+- [Dell XPS 15](https://www.dell.com/ja-jp/shop/%E3%83%87%E3%83%AB%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/xps-15-%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/spd/xps-15-7590-laptop) を購入しました。
+  - Intel Core i7-9750H (最大4.5GHz/6コア/12スレッド)、16GB メモリ、SSD 1TB、NVIDIA GeForce GTX 1650
+- SDL2 のビルド周りで [酷いバグ](https://twitter.com/melponn/status/1225083116559032320) に遭遇してました
+- あまり書いてないけど、数日に１回ぐらいのペースで [Uber Eats](https://www.ubereats.com/ja-JP/) を利用してます
+
+### 感想
+
+- 完全に時雨堂中心の生活になってた
+- Wandbox 周りもちょこちょこ弄ってたんだけど、外に出せるほどは進んでない
+- 月の後半は割と遊んでる時間が多かった気がするので、もうちょいプログラム周りに割り当てたい
+- 睡眠はまた夜型になってきた
+  - 昼に連携取りながら進める仕事がほとんど無くなったので油断し始めた
+- ヨシケイと Uber Eats で順調に引きこもりが加速してる
+
 ## 0.34.12 (2019/1)
 
 ### Wandbox 関連
