@@ -1,5 +1,94 @@
 # じぶんリリースノート
 
+## 0.35.4 (2020/4)
+
+（これからは月をパッチバージョンを一致させるようにした）
+
+### Wandbox 関連
+
+- Wandbox の内部通信を gRPC 化しました
+  - PR はこれ: [kennel と cattleshed 間の通信を gRPC 化した](https://github.com/melpon/wandbox/pull/298)
+- cattleshed のログにリモートアドレスとかの情報を追加しました
+  - PR はこれ: [cattleshed のログにリモートアドレスとかの情報を追加した](https://github.com/melpon/wandbox/pull/302)
+  - これで問題のあるコードを大量に投げてくる人を IP でブロックするみたいなのが出来るようになる
+  - 早速 gRPC 化の恩恵が現れてる
+    - 元のプロトコルだと、プロトコルを拡張してパーサを書き換えてってやらないといけなくて面倒だったのでやってなかった
+- [@kikairoya](https://github.com/kikairoya) さんの PR [uidの分離を実装](https://github.com/melpon/wandbox/pull/304) をマージしました
+  - おかげで酷いコードが投げられても他のユーザに影響することが少なくなりました。ありがとうございます。
+- ちょっとだけ Issue の整理をしました
+  - インストールができないみたいな Issue をどうしようかと思ってたんだけど、ある程度自分の中で方針が決まったので、[こういう](https://github.com/melpon/wandbox/issues/293) フォーマットも何も考えずペーストしただけの Issue は何も言わずクローズすることにした。再度同じようなの立てたらブロックする
+  - どっかに方針書いておきたいところ
+- [Wandbox に clang-10.0.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-clang-10-0-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-35cd9984e04c)
+- [Wandbox に go-1.14.2 や go-1.13.10 などを追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-go-1-14-2-%E3%82%84-go-1-13-10-%E3%81%AA%E3%81%A9%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-92f166d2fea6)
+- [Wandbox に nim-1.2.0 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-nim-1-2-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-d3955f09ccdd)
+- [Wandbox に nodejs-14.0.0 や nodejs-13.13.0 などを追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-nodejs-14-0-0-%E3%82%84-nodejs-13-13-0-%E3%81%AA%E3%81%A9%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-9993329389a2)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- [@jj1bdx](https://twitter.com/jj1bdx)
+- [TAKEI Yuya](https://github.com/takei-yuya)
+- [nekketsuuu](https://twitter.com/nekketsuuu)
+- [@cpp_maid_bot](https://twitter.com/cpp_maid_bot)
+- [@ishidakei](https://twitter.com/ishidakei)
+- [@hnokx](https://twitter.com/hnokx)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [gumi/yacto](https://github.com/gumi/yacto)
+  - マイグレーションファイルをスキーマ毎に分けて生成するようにしました。
+    PR はこれ: [マイグレーションファイルをスキーマ毎に分けるようにした](https://github.com/gumi/yacto/pull/20)
+  - 上記の対応を入れて [yacto-2.0.0-rc.0](https://hex.pm/packages/yacto/2.0.0-rc.0) をリリースしました
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - VERSIONS ファイルにはコミット情報だけじゃなくてリモートの URL も追加しました
+    - WebRTC が参照しているリポジトリの URL が変わってしまうということが起きたため
+  - ubuntu-16.04_armv7 ビルドから nolibcxx バージョンを削除しました
+    - GCC が古くてビルドが通らなくなったので
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - Windows 版で NVIDIA VIDEO CODEC SDK が入っている場合に、ハードウェアデコードが出来るようにしました。
+    - PR はこれ: [Windows の NvDec に対応](https://github.com/shiguredo/sora-unity-sdk/pull/3)
+    - GitHub Actions には CUDA 環境が無いんだけど、その状態でビルドさせるのにすごく苦労した
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - Jetson Nano では ALSA ではなく PulseAudio を利用する
+    - [sora-laboでマルチストリームを実行中にjetsonでmomo配信を行うとmomoの映像がsora-laboに出ない](https://gist.github.com/torikizi/a9171ba1f6b9627a301c1e4100ea9349) の問題を解決するため
+  - ubuntu-16.04_armv7_ros のビルドを削除
+  - macOS で、バージョンが変わったら deps も自動的に取得し直すようにした
+  - --version に WebRTC のバージョンや Environment の情報を出力する
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - 利用する Sora Unity SDK のバージョンを 2020.2 にアップデートしました
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+- [Wandbox の内部通信を gRPC 化した](https://medium.com/wandbox-org/wandbox-%E3%81%AE%E5%86%85%E9%83%A8%E9%80%9A%E4%BF%A1%E3%82%92-grpc-%E5%8C%96%E3%81%97%E3%81%9F-d0e8c8bf8717)
+
+### その他
+
+- コロナとか香川とかで Twitter 疲れを起こしたので、Twitter を見るのを一時的にやめてみました。会話はちょっとしたけど基本的に TL は見てない。
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを継続してやっています。
+- [リングフィットアドベンチャー](https://www.nintendo.co.jp/ring/) も継続してちょこちょこやってます。
+  - 今月は大体音ゲーやってた。
+  - でもこれ、上級と超上級に難易度の差がありすぎだし、曲ごとに同じような難易度ばっかりで飽きてくるし、レベルデザイン失敗してると思う
+  - センサーみたいなアナログなのでやってるせいか、うまく動かしたつもりで失敗してるのはなかなかフラストレーションが溜まる
+  - 音ゲー的な面白さもイマイチな感じ。腹筋のやつとか開発者ほんとに遊んだのかこれ
+  - でも運動になるのでやる
+
+### 感想
+
+- 今月は仕事がほぼ無い状態だったのでいろいろできた。
+  - 結構サボってる日もあるんだけど、一ヶ月あると意外と結構いろいろ進んで面白かった
+- Twitter から離れた感想としては、割と平和で時間も無駄にせずに良かった気がする。
+  - ただいくつかつぶやきたいことがある時に、それをつぶやくのも出来なくなってるのは微妙だった
+  - あとランダムに良さげな情報を手に入れる手段が無くなってしまうので、自分に Twitter 疲れを起こさない人のリスト（プログラミング関係のことばっかりツイートしている人とか可愛い絵ばっかりリツイートしている人とか）みたいなの作って、頑張ってそこしか見ないみたいな運用でもいいと思うので、来月はそうしてみる
+  - あと携帯からだと無限に時間を吸い取られるので、引き続き Twitter クライアントをアンインストールしたままにしておこうと思う
+
 ## 0.35.2 (2020/3)
 
 ### Wandbox 関連
