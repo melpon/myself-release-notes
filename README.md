@@ -1,5 +1,70 @@
 # じぶんリリースノート
 
+## 0.35.5 (2020/5)
+
+### Wandbox 関連
+
+- [Wandbox に Boost 1.73.0 を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-boost-1-73-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-288e885700e2)
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- LouiS0616
+- [@volanja](https://twitter.com/volanja)
+- 大鎌広
+- 他1名
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [melpon/wandbox](https://github.com/melpon/wandbox)
+  - 内部通信を gRPC 化した影響で、うまく動いてない部分がまだあったのでいろいろ直しました。
+- [melpon/wandbox-builder](https://github.com/melpon/wandbox-builder)
+  - Go が動いていなかったのを修正しました
+- [melpon/ggrpc](https://github.com/melpon/ggrpc)
+  - 実装をいい感じにして 0.1.0 リリースしました
+  - そのままいろいろバグ修正や機能追加して 0.2.3 までバージョンアップしました
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - Sora.Role.Upstream, Sora.Role.Downstream を削除しました
+  - 接続確立中に Sora.Dispose するとセグフォすることがあったのを修正しました
+  - 接続が確立する前に ping を受け取ると通信が切断されてしまっていたのを修正しました
+  - Windows 版の H.264 デコードでリサイズが発生した際にエラーになるのを修正しました
+  - [Android 対応](https://github.com/shiguredo/sora-unity-sdk/tree/feature/android) を始めました
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - Sora 切断時にトラックをクリアしてなかったのを修正しました
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - [Android 用パッケージを追加](https://github.com/shiguredo-webrtc-build/webrtc-build/pull/1) しました
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - EncodedImage::set_buffer() が消えてたので、毎フレーム EncodedImage を作り直すようにしました
+  - Windows で音が鳴らなくなっていたので、Windows の ADM に専用の関数を使うようにしました
+  - ビルド時に利用する Jetson Nano の L4T を 32.4.2 に更新しました
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+なし
+
+### その他
+
+- Twitter にちょっとずつ復帰してきました。安心な発言しかしない人をリストに入れて（現在8人）、そこしか見ない運用してます。
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを継続してやっています。
+  - iPhone の Twitter クライアントを消しちゃったのでアップロードできてないですが。
+- 5月の後半にまたギックリ腰をやってしまった。
+  - そこまで酷くはないけど、1〜2日は立ち上がるだけで痛すぎて脂汗が出てた
+
+### 感想
+
+- 5月はメインの仕事が忙しいから OSS 活動はあまり進まなさそうって思ってたけど、振り返ると意外と結構やってたっぽい
+  - メインの仕事のコードも、眺めるとかなりの量書いてて、一ヶ月って結構いろいろ出来るんだなって思った
+- Wandbox がバグってて急いで修正したり、Sora Unity SDK がバグってて急いで修正したりで、バグは進捗を産むということが分かった
+
 ## 0.35.4 (2020/4)
 
 （これからは月をパッチバージョンを一致させるようにした）
@@ -323,8 +388,8 @@ Wandbox はスポンサーになってくれた皆のおかげで動いてるの
 
 ## ルール
 
-["じぶんリリースノート" と称した月報を続けて3年が経った](https://blog.a-know.me/entry/2019/02/02/214612) のルールをほぼそのまま利用する。
+["じぶんリリースノート" と称した月報を続けて3年が経った](https://blog.a-know.me/entry/2019/02/02/214612) のルールをそのまま利用する。
 
 - 毎月月初に "新しい自分" がリリースされた、ということにして月報代わりに書いていく
-- バージョン番号は `0.年齢.月齢` にして、リリース前は後ろに `-dev` を付ける
+- バージョン番号は `0.年齢.月齢` にする
 - あの世へ行ったらメジャーバージョンを上げる
