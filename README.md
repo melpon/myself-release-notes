@@ -2,13 +2,105 @@
 
 ## master
 
+## 0.35.6 (2020/6)
+
+### Wandbox 関連
+
+- [Wandbox に gcc-10.1.0を追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-gcc-10-1-0%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-1cf8ca1ad4f5)
+- [Wandbox に TypeScript 3.9.5 などを追加しました](https://medium.com/wandbox-org/wandbox-%E3%81%AB-typescript-3-9-5-%E3%81%AA%E3%81%A9%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-b561f0542636)
+- [Wandbox に Lua 5.4.0 を追加しました](https://medium.com/@melpon/wandbox-%E3%81%AB-lua-5-4-0-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-b99d95c84137)
+
 ### Wandbox スポンサー関連
 
 以下の個人スポンサーを追加/更新しました:
 
 - [I (@wx257osn2)](https://twitter.com/wx257osn2)
 - 安藤敏彦
-- 長谷川一輝
+- [長谷川一輝](https://twitter.com/_NANASI880)
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [melpon/wandbox](https://github.com/melpon/wandbox)
+  - Boost.SML と Boost.DI の URL が間違ってると[報告](https://github.com/melpon/wandbox/issues/308)を受けたので修正しました
+  - ggrpc のバージョンを 0.4.0 に更新しました
+  - ndjson の API が正しく動いてなかったのを修正しました
+  - stdout と stderr が同時に閉じるとセグフォする問題を修正しました
+  - 全体的に許容する nproc の数を増やしました
+  - 詳細は[こちら](https://github.com/melpon/wandbox/commits?author=melpon&since=2020-05-31&until=2020-06-30)
+- [melpon/ggrpc](https://github.com/melpon/ggrpc)
+  - サーバストリーミングを実装しました
+  - クライアントストリーミングを実装しました
+  - 関数名を全体的に統一した名前に変更しました
+  - ドキュメントを整理しました
+  - 上記の変更を反映した ggrpc 0.4.0 をリリースしました
+  - 詳細は[こちら](https://github.com/melpon/ggrpc/commits?author=melpon&since=2020-05-31&until=2020-06-30)
+- [melpon/grpc-over-ayame](https://github.com/melpon/grpc-over-ayame)
+  - 作りました。C++ 版の gRPC over WebRTC です
+  - [Ayame](https://github.com/OpenAyame/ayame) でシグナリングしてます
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - [Androidに対応](https://github.com/shiguredo/sora-unity-sdk/pull/4) しました
+  - GitHub Actions のキャッシュを cache@v2 にアップデート
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - pub, sub, pubsub という名前を recvonly, sendonly, sendrecv に変更
+  - Android対応に合わせてメタデータを変更
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk-samples/commits?author=melpon&since=2020-05-31&until=2020-06-30)
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - Windows 版のディレクトリ削除でエラーになっていたのを修正しました
+  - `raspbian-buster` を `raspberry-pi-os` に変更しました
+  - `raspberry-pi-os_armv8` を追加しました
+  - macOS 版の .a 内のファイル名が15文字で切られていたのを修正しました
+  - 詳細は[こちら](https://github.com/shiguredo-webrtc-build/webrtc-build/commits?author=melpon&since=2020-05-31&until=2020-06-30)
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - [Windows / Linux の全画面スクリーンキャプチャを実装](https://github.com/shiguredo/momo/pull/155) しました
+  - [利用できるエンコーダ/デコーダの一覧を表示する機能を実装](https://github.com/shiguredo/momo/pull/156) しました
+  - [Boost のアーカイブをキャッシュ](https://github.com/shiguredo/momo/pull/159) しました
+  - [ビデオコーデックのエンジン名を指定できる機能を実装](https://github.com/shiguredo/momo/pull/161) しました
+  - `raspberry-pi-os_armv8` を追加しました
+  - パッケージ名 `ubuntu-18.04_armv8_jetson_nano` を `ubuntu-18.04_armv8_jetson` に変更しました
+  - パッケージ名 `raspbian-buster_armv6` と `raspbian-buster_armv7` を `raspberry-pi-os_armv6` と `raspberry-pi-os_armv7` に変更しました
+  - 詳細は[こちら](https://github.com/shiguredo/momo/commits?author=melpon&since=2020-05-31&until=2020-06-30)
+- [cpprefjp/crsearch](https://github.com/cpprefjp/crsearch)
+  - [#41 add cpo category](https://github.com/cpprefjp/crsearch/pull/41) をマージ
+  - deps更新
+- [cpprefjp/kunai](https://github.com/cpprefjp/kunai)
+  - deps更新
+- [DreamExposure/DisCal-Discord-Bot](https://github.com/DreamExposure/DisCal-Discord-Bot)
+  - 日本語化するのを[手伝いました](https://github.com/DreamExposure/DisCal-Discord-Bot/pull/32)。
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。(詳細は非公開)
+- [時雨堂](https://shiguredo.jp/) から Sora Unity SDK の Android 対応を優先実装する仕事を請けています。
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+- [Sora Unity SDK を Android 対応した話 - DEV Community 👩‍💻👨‍💻](https://dev.to/wandbox/sora-unity-sdk-android-1638)
+- [Sora Unity SDK を NVDEC に対応した話 - DEV Community 👩‍💻👨‍💻](https://dev.to/wandbox/sora-unity-sdk-nvdec-2ieg)
+
+### その他
+
+- [std::めるぽんさんはTwitterを使っています 「C++ で gRPC over WebRTC できた！HTTP/2 の代わりに WebRTC DataChannel を使って gRPC をやり取りできるようになったぞ https://t.co/c87T0Hs6ZU」 / Twitter](https://twitter.com/melponn/status/1277183741010444288) が大量に Fav されてて謎だった。
+  - 相当ニッチな内容だと思うんですけどこれ…。
+- [std::めるぽんさんはTwitterを使っています 「Wandbox がちょこちょこ落ちる問題直ったかもしれない。しばらくこれで様子見かな」 / Twitter](https://twitter.com/melponn/status/1274517939291451393) で無事 Wandbox が落ちる問題が直ってたので安心しました。
+  - 修正は[このコミット](https://github.com/melpon/wandbox/commit/ec5cf9211415838f31cba1eddcb05b39d06e42a9)です。何が間違ってたのか考えてみると面白いかも。
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を作るのを継続してやっています。
+  - もう最近は妻に作ってもらうのが殆どになりましたが
+- 歯医者に通い始めました。
+  - 今までの人生で歯医者にはほぼ無縁だったので、麻酔されたり親知らず抜かれたりゴリゴリされたりキュイーンされたり詰め物されたりでなかなかつらい…。
+- 生活リズムは崩れ気味だった
+  - けどなんかもう体調さえ崩れなければ別にいいんじゃないかってあまり気にしなくなってきた
+
+### 感想
+
+- メインの仕事が大分落ち着いてたので OSS 系に精を出してました。
+  - 振り返るとかなりの量になってて面白い
+- ブログ記事を２本も（？）書けた。
+  - 自分のやったことを記事にするだけならそんなに大変でもないので、誰需要という感じでこの辺をちょこちょこ書いていきたいところ。
+- 6月は一瞬で終わってしまった気がする。もうちょい人生を長く感じるようにしていきたいところ。
 
 ## 0.35.5 (2020/5)
 
