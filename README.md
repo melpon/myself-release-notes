@@ -2,6 +2,67 @@
 
 ## master
 
+## 0.35.7 (2020/7)
+
+### Wandbox 関連
+
+特になし
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- むてら
+- [@Linda_pp](https://twitter.com/Linda_pp)
+- ガチKGB
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [melpon/wandbox](https://github.com/melpon/wandbox)
+  - IP 毎に送信できるソースコードのサイズを制限しました。
+    - めちゃめちゃでかいコードを何度も送られてきて、実行ログが酷いことになってしまったので
+  - /api/list.json の select スイッチに name が無かったのを修正
+    - 内部の通信を gRPC に入れ替える前にはあった
+  - 詳細は[こちら](https://github.com/melpon/wandbox/commits?author=melpon&since=2020-06-30&until=2020-07-31)
+- [gumi/yacto](https://github.com/gumi/yacto)
+  - `mix yacto.migrate` のリポジトリ一覧を `:ecto_repos` から取得する ([#21](https://github.com/gumi/yacto/issues/21))
+  - 上記の対応を入れて [yacto-2.0.0-rc.1](https://hex.pm/packages/yacto/2.0.0-rc.1) をリリースしました
+  - 詳細は[こちら](https://github.com/gumi/yacto/commits?author=melpon&since=2020-06-30&until=2020-07-31)
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - [GetStats を実装](https://github.com/shiguredo/sora-unity-sdk/pull/7) しました
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk/commits?author=melpon&since=2020-06-30&until=2020-07-31)
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - GetStats を利用する処理を追加
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk-samples/commits?author=melpon&since=2020-06-30&until=2020-07-31)
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - Jetson Xavier での VP9 のビットレートを調整しました
+  - [VP8/H264 のサイマルキャストを実装](https://github.com/shiguredo/momo/pull/165) しました
+  - [リファクタリング](https://github.com/shiguredo/momo/pull/166) しました
+  - [SDL のビルド周りを修正](https://github.com/shiguredo/momo/pull/167) しました
+  - 詳細は[こちら](https://github.com/shiguredo/momo/commits?author=melpon&since=2020-06-30&until=2020-07-31)
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+なし
+
+### その他
+
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を妻に作ってもらってます。
+- 歯医者に行ってたんだけど、一度予約すっぽかしてから再度予約するのは敷居が高くて治療が止まってる状態です。
+
+### 感想
+
+- 何もしてないのに７月が終わってたみたいな気分。
+- VP9 の調査に半月ぐらい掛かってしまったとはいえ、それを考慮してもやってることが少なすぎなので反省したい。
+
 ## 0.35.6 (2020/6)
 
 ### Wandbox 関連
