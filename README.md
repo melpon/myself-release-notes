@@ -2,6 +2,66 @@
 
 ## master
 
+## 0.35.8 (2020/8)
+
+### Wandbox 関連
+
+特になし
+
+### Wandbox スポンサー関連
+
+特になし
+
+### OSS 関連
+
+- [melpon/wandbox](https://github.com/melpon/wandbox)
+  - Runtime Options が機能しなくなっていたのを修正しました ([#312](https://github.com/melpon/wandbox/issues/312))
+  - 詳細は[こちら](https://github.com/melpon/wandbox/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+- [melpon/libxml](https://github.com/melpon/libxml)
+  - [#5](https://github.com/melpon/libxml/pull/5), [#7](https://github.com/melpon/libxml/pull/7), [#9](https://github.com/melpon/libxml/pull/9) をマージして、依存ライブラリを更新して libxml-1.1.6 をリリースしました
+  - 詳細は[こちら](https://github.com/melpon/libxml/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - 設定は全部 ConnectionSettings に纏めて全体で利用していたけれども、モジュール性が悪いのでクラスごとに必要な最低限の設定に分けました ([#169](https://github.com/shiguredo/momo/pull/169))
+  - `--multistream` と `--simulcast` に引数 true/false の指定を必要にしました
+  - 詳細は[こちら](https://github.com/shiguredo/momo/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - Unity カメラのスクリーンキャプチャが動かいことがあった問題を、深度バッファを設定することで解消しました
+  - Sora Unity SDK のダウンロードしたバイナリにライセンスファイルを含めました
+  - iOS に対応しました ([#9](https://github.com/shiguredo/sora-unity-sdk/pull/9))
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+- [shiguredo/sora-unity-sdk-samples](https://github.com/shiguredo/sora-unity-sdk-samples)
+  - サンプルが利用する Sora Unity SDK を 2020.8 にアップデートしました
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk-samples/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - iOS ビルドに対応しました ([#6](https://github.com/shiguredo-webrtc-build/webrtc-build/pull/6))
+  - CentOS 8 ビルドに対応しました ([#8](https://github.com/shiguredo-webrtc-build/webrtc-build/pull/8))
+  - デイリービルドのブランチを master から daily に変更して、今後は HEAD ビルドの修正をこのブランチで行うようにしました
+  - HEAD ビルドが通らなくなっていたいくつかの問題を修正しました
+  - その他いくつかのバグを修正しました
+  - 詳細は[こちら](https://github.com/shiguredo-webrtc-build/webrtc-build/commits?author=melpon&since=2020-07-31&until=2020-08-31)
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から OSS で公開予定の [WebRTC Load Testing Tool Zakuro](https://medium.com/shiguredo/webrtc-load-testing-tool-zakuro-%E9%96%8B%E7%99%BA%E4%B8%AD-8d225a0654d) を開発する仕事を請けています
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けています。(詳細は非公開)
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+
+### ブログ
+
+- [Sora Unity SDK を iOS 対応した話](https://dev.to/wandbox/sora-unity-sdk-ios-356m)
+
+### その他
+
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を妻に作ってもらってます。
+- 歯医者にまた行き始めました。
+
+### 感想
+
+- ８月の前半は Sora Unity SDK の iOS 対応、後半は Zakuro に力を入れて頑張ってた。
+- 種類は少ないけど、この２つをかなり頑張ってやってたと思うので今月は割と満足。
+- 来月は Zakuro の公開に向けての対応と、あとは別件の仕事をちょっとするかも。
+
 ## 0.35.7 (2020/7)
 
 ### Wandbox 関連
