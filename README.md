@@ -2,6 +2,67 @@
 
 ## master
 
+## 0.35.9 (2020/9)
+
+### Wandbox 関連
+
+特になし
+
+### Wandbox スポンサー関連
+
+以下の個人スポンサーを追加/更新しました:
+
+- [三重野賢人](https://twitter.com/djann9071)
+- Tommy6
+
+Wandbox はスポンサーになってくれた皆のおかげで動いてるのでとても感謝しています。
+
+### OSS 関連
+
+- [melpon/wandbox](https://github.com/melpon/wandbox)
+  - Wandbox の Issue を閉じました
+  - README.md を日本語にして FAQ を追加しました
+  - 実行時に作成できるファイル数とファイルサイズに制限を入れました
+  - 詳細は[こちら](https://github.com/melpon/wandbox/commits?author=melpon&since=2020-08-31&until=2020-09-30)
+- [shiguredo/zakuro](https://github.com/shiguredo/zakuro)
+  - 作りました
+  - 詳細は[こちら](https://github.com/shiguredo/zakuro/commits?author=melpon&since=2020-08-31&until=2020-09-30)
+- [shiguredo/momo](https://github.com/shiguredo/momo)
+  - ROS ビルドを削除しました ([#173](https://github.com/shiguredo/momo/pull/173))
+  - NVIDIA VIDEO CODEC SDK 10 に対応して、Linux で H264 が動作しない問題を修正しました ([#174](https://github.com/shiguredo/momo/pull/174))
+  - Windows スクリーンキャプチャが動かなくなっていたのを修正しました
+  - その他いくつかの変更や修正をしました
+  - 詳細は[こちら](https://github.com/shiguredo/momo/commits?author=melpon&since=2020-08-31&until=2020-09-30)
+- [shiguredo/sora-unity-sdk](https://github.com/shiguredo/sora-unity-sdk)
+  - M86 対応でコンパイルが通らなくなっていた部分を修正しました
+  - 詳細は[こちら](https://github.com/shiguredo/sora-unity-sdk/commits?author=melpon&since=2020-08-31&until=2020-09-30)
+- [shiguredo-webrtc-build/webrtc-build](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  - ubuntu-16.04_x86_64 と ubuntu-16.04_armv7 ビルドを削除しました
+  - 詳細は[こちら](https://github.com/shiguredo-webrtc-build/webrtc-build/commits?author=melpon&since=2020-08-31&until=2020-09-30)
+
+### 仕事状況
+
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Native Client Momo](https://github.com/shiguredo/momo) やその周辺ライブラリのアップデートや機能追加する仕事を請けています。
+- [時雨堂](https://shiguredo.jp/) から OSS である [WebRTC Load Testing Tool Zakuro](https://github.com/shiguredo/zakuro) を開発する仕事を請けています。
+- [時雨堂](https://shiguredo.jp/) から gRPC C++ や gRPC Go を使った開発を請けていました（終了）。
+- [株式会社アカツキ](https://aktsk.jp/) から Elixir 関連の OSS のメンテナンスや技術コンサルティングを行う仕事を請けています。
+- とある会社から gRPC を使ったライブラリの開発を請けています。(詳細は非公開)
+
+### ブログ
+
+- [WebRTC Load Testing Tool Zakuro を作った話](https://dev.to/wandbox/webrtc-load-testing-tool-zakuro-p61)
+
+### その他
+
+- [ヨシケイ](http://yoshikei-dvlp.co.jp/) を利用してご飯を妻に作ってもらってます。
+- 歯医者に行きました。
+
+### 感想
+
+- ９月は大体 Zakuro だった。
+- Zakuro に [ちょっとしたゲーム](https://twitter.com/melponn/status/1309881464180232193) も追加できたので割と満足している。
+- 来月は別件の gRPC の仕事を頑張ることになりそう。
+
 ## 0.35.8 (2020/8)
 
 ### Wandbox 関連
